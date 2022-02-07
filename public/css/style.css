@@ -1,0 +1,1016 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* font-size: 100%; */
+    width: 100%;
+}
+
+body { 
+    font-size: 1.6rem; /* =16px */
+    line-height: 1.2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+    background-color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* LOGIN LINKS */
+
+.authorNav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.authorNav a {
+    color: gray;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.authorNav li {
+    margin-right: 0.5rem;
+}
+
+.authorNav li:last-of-type {
+    margin-right: 0;
+}
+
+.authorNav a:hover {
+    color: goldenrod;
+}
+
+.authorNav button {
+    background-color: none;
+    border-radius: 0;
+    border: 0;
+    font-size: 1.2rem;
+}
+
+.authorNav button:hover {
+    color: goldenrod;
+}
+
+/* MAIN MENU */
+
+.mainNav {
+    background-color: #222;
+}
+
+.mainNav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.mainNav ul a {
+    color: whitesmoke;
+    padding: 2.5rem 3rem;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainNav ul a:hover {
+    color: goldenrod;
+    border-bottom: 0.2rem solid;
+    margin-bottom: -0.2rem;
+}
+
+.mainMinNav {
+    display: none;
+}
+
+/* MAIN MIN MENU */
+
+.mainMinNav {
+    background-color: #222;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainMinNav {
+    display: none;
+}
+.mainMinNavMenu {
+    color: whitesmoke;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+}
+
+.mainMinNavMenu:hover {
+    background-color: gray;
+} 
+
+.mainMinNav h1 {
+    background-color: goldenrod;
+    margin: 0;
+    padding: 1rem;
+}
+
+.mainMinNavHeading {
+    color: #222;
+}
+
+/* FOOTER */
+.mainFooter {
+    width: 100vw;
+    background-color: #222;
+}
+
+.mainFooter p {
+    color: grey;
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* MAIN HEAD */
+.mainHead {
+    width: 90%;
+}
+
+.mainHead h1 {
+    color: #222;
+    font-size: 5rem;
+    line-height: 2;
+}
+
+/* LOGIN */
+.login {
+    background-color: #222;
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+.login form {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 25rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.login input {
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+}
+
+.login input:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.loginTool {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.loginTool a {
+    color: whitesmoke;
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.loginTool a:hover {
+    color: lightgray;
+}
+
+.loginTool button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: goldenrod;
+}
+
+.loginTool button:hover {
+    background-color: whitesmoke;
+}
+
+
+
+/* SHOW ALL POSTS */
+
+.allPosts , .showPost , .createPost , .deletePost , .editPost {
+    width: 100vw;
+    min-height: 77vh;
+    background-color: lightgrey;
+
+    padding: 2rem 11rem;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.posts {
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+}
+
+.posts:hover {
+    background-color: white;
+}
+
+.postsImage {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.postImageLink {
+    display: block;
+}
+
+.postsHeading , .postHeading {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.postsHeading a, .postsHeading a:visited {
+    color: #222;
+}
+
+.postsHeading a:hover {
+    color: goldenrod;
+}
+
+.postsText , .postText {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.postsMore {
+    background-color: #222;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.postsMore:hover {
+    color: goldenrod;
+}
+
+
+
+/* NOTHING */
+
+.nothing {
+    text-align: center;
+    padding: 5rem;
+}
+
+/* FLASH */
+.alert {
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid whitesmoke;
+}
+
+.alert li {
+    margin-bottom: 1rem;
+}
+
+.alert li:last-child {
+    margin-bottom: 0rem;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+
+/* ONE POST SHOW */
+
+.post , .tag {
+    width: 75%;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.postImageBackgtound {
+    background-color: lightgrey;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.postImage {
+    max-width: 100%;
+    height: auto;
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto;
+    border-left: 1rem solid whitesmoke;
+    border-right: 1rem solid whitesmoke;
+}
+
+.postHeadingAndTime {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.postTime {
+    color: goldenrod;
+    font-size: 1.2rem;
+    padding-top: 2.5rem;
+    margin-left: 3rem;
+}
+
+.postAutor {
+    font-size: 1.2rem;
+}
+
+.postAutor a, .postAutor a:visited {
+    color: goldenrod;
+}
+
+.postAutor a:hover {
+    color: #222;
+}
+
+.postLinks {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.postLinkTool {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.postLinkHome a , .postLinkTool a {
+    background-color: lightgray;
+    color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.postLinkHome a:hover {
+    background-color: goldenrod;
+}
+
+.postLinkTool a {
+    margin-left: 1rem;
+    background-color: goldenrod;
+    color: #222;
+}
+
+.postLinkTool a:hover {
+    color: whitesmoke;
+}
+
+/* CREATE FORM */
+
+.createPostForm , .editPostForm {
+    width: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.titleCreateInput , .titleEditInput {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+}
+
+.textCreateInput , .textEditInput{
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+}
+
+.createLinks , .editLinks {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.createLinkTool , .editLinkTool {
+    background-color:goldenrod;
+    color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.createLinkTool:hover , .editLinkTool:hover {
+    color: white;
+}
+
+.createLinkHome , .editLinkHome {
+    background-color: whitesmoke;
+    color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.createLinkHome:hover , .editLinkHome:hover {
+    background-color: goldenrod;
+}
+
+.editImg {
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.editImgBackground {
+    background-color:grey;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.fileInput {
+    margin-bottom: 1rem;
+}
+
+.editCheck {
+    margin-left: 0rem;
+}
+
+.editCheckBackground {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+
+/* DELETE POST */
+
+.delete {
+    border-left: 3rem solid goldenrod;
+}
+
+.deleteLinks {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.deleteLinkTool {
+    background-color: goldenrod;
+    color: #222;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 3rem;
+    align-self: center;
+}
+
+.deleteLinkTool:hover {
+    color: whitesmoke;
+}
+
+.deleteLinkHome {
+    background-color: #222;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.deleteLinkHome:hover {
+    color: goldenrod;
+}
+
+.deletePost .postImage {
+    max-height: 50vh;
+}
+
+/* ALL TAGS */
+.allTags {
+    width: 100%;
+    background-color: lightgray;
+    min-height: 77vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.allTagsContainer {
+    width: 70%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 2rem 2rem;
+}
+
+.tags {
+    margin: 1rem;
+    display: inline-block;
+}
+
+.tagsHeading {
+    margin: 0;
+}
+
+.tagsHeading a {
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    background-color: #222;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+}
+
+.tagsHeading a:hover {
+    color: #222;
+    background-color: goldenrod;
+}
+
+
+/* TAG IN POST */
+
+.posttags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    margin: 1rem 0;
+}
+
+.posttags a {
+    color: whitesmoke;
+    background-color:#222;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.posttags a:hover {
+    background-color: goldenrod;
+    color: #222;
+}
+
+/* EDIT CHECKBOX */
+.editCheckbox {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #222;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.editCheckbox label {
+    margin-right: 2rem;
+}
+
+.editCheckbox label:last-child {
+    margin-right: 0;
+}
+
+/* SHOW USER */
+.content {
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 2rem;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 77vh;
+}
+.showUser {
+    background-color: lightgray;
+}
+
+.showUser img {
+    max-width: 100%;
+    height: auto;
+    /* max-height: 50vh; */
+    display: block;
+    margin: 0 auto;
+    /* padding: 3rem; */
+}
+
+.showUser h1 {
+    text-align: center; 
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.userLink {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.backLink {
+    background-color: lightgray;
+    color: #222;
+}
+
+.backLink:hover {
+    background-color: goldenrod;
+}
+
+.toolLink {
+    background-color: goldenrod;
+    color: whitesmoke;
+}
+
+.toolLink:hover {
+    color: #222;
+}
+
+.showUser input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+input[type='checkbox'] {
+    width: 1rem;
+}
+
+input[type=file] {
+    padding: 0;
+}
+
+/* COMMENTS */
+.commentAdd {
+    width: 100%;
+}
+
+.commentAdd textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.5rem;
+}
+
+.commentAdd button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: goldenrod;
+    margin-bottom: 2rem;
+}
+
+.commentAdd button:hover {
+    color: whitesmoke;
+}
+
+.comment {
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+    /* width: 80%;
+    margin: 0 auto; */
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.commentImg img {
+    max-width: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.commentPost {
+    margin-left: 1rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.commentAuthor a , .commentTool a {
+    color: #222;
+    font-weight: bold;
+}
+
+.commentAuthor a:hover , .commentTool a:hover {
+    color: goldenrod;
+}
+
+.commentTool a {
+    margin-right: 0.5rem;
+}
+
+.commentTool {
+    align-self: flex-end;
+}
+
+.commentAuthor , .commentContent {
+    margin-bottom: 0.5rem;
+}
+
+.commentContent p {
+    line-height: 1.4;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .post , .tag {
+        width: 100%;
+    }
+    .mainHead h1 {
+        font-size: 4rem;
+    }
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1180px) {
+    .posts {
+        width: 40rem;
+        margin: 2rem;
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+    .posts {
+        width: 35rem;
+        margin: 2rem;
+    }
+    .tagsHeading a {
+        font-size: 2.5rem;
+    }
+    .showUser h1 {
+        font-size: 2rem; 
+    }
+} 
+
+@media only screen and (max-width: 1000px) {
+    .posts {
+        width: 30rem;
+        margin: 2rem;
+    }
+    .createPostForm , .editPostForm{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .allPosts {
+        padding: 2rem 2rem ;
+    }
+
+    .posts {
+        width: 35rem;
+        margin: 1.5rem;
+    }
+    .mainHead h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .posts {
+        width: 30rem;
+        margin: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 760px) {
+    .mainMinNav {
+        display: flex;
+    }
+
+    .mainNav ul {
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+    }
+
+    .mainNav ul a {
+        width: 100%;
+    }
+
+    .mainNav ul a:hover {
+        margin-bottom: 0;
+        border: none;
+        background-color: goldenrod;
+        color: #222;
+    }
+    .tagsHeading a {
+        font-size: 2rem;
+    }
+
+    .tags {
+        margin: 0.5rem;
+    }
+  }
+
+@media only screen and (max-width: 680px) {
+    .posts {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .showPost , .createPost , .deletePost , .editPost {
+        padding: 2rem 2rem;
+    }
+
+    .alert {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .allTagsContainer {
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .tagsHeading a {
+        font-size: 1.8rem;
+    }
+
+    .mainHead h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 620px) {
+    .createLinkHome {
+        margin-top: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .showPost , .createPost , .deletePost , .editPost {
+        padding: 1rem 1rem;
+    }
+
+    .post , .tag {
+        padding: 1rem;
+    }
+
+    .delete {
+        border-left: 2rem solid goldenrod;
+    }
+
+    .createLinkHome {
+        margin-top: 2rem;
+    }
+
+    .allTagsContainer {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .tagsHeading a {
+        font-size: 1.6rem;
+    }
+    
+  }
+
+  @media only screen and (max-width: 440px) {
+    .createLinks {
+        align-items: stretch;
+    }
+
+    .delete {
+        border-left: 1rem solid goldenrod;
+    }
+
+    .deleteLinkTool , .deleteLinkHome {
+        width: 100%;
+        text-align: center;
+    }
+
+    .deleteLinkTool {
+        margin-bottom: 2rem;
+    }
+
+    .alert {
+        top: 20%;
+    }
+
+    .allTagsContainer {
+        width: 95%;
+    }
+    .mainHead h1 {
+        font-size: 1.5rem;
+    }
+
+    .login form {
+        width: 85%;
+    }
+  }
+
+  
+
+  
+
+  @media only screen and (max-width: 380px) {
+    .allPosts {
+        padding: 1rem 1rem ;
+    }
+
+    .postHeadingAndTime {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+
+        margin-bottom: 1rem;
+    }
+
+    .postTime {
+        margin-left: 0;
+    }
+
+    .postHeading {
+        margin-bottom: 0rem;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+    .mainFooter p {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+  }
+
+
+
