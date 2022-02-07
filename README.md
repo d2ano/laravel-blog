@@ -13,6 +13,11 @@ Spusti server cez
 php artisan serve
 ```
 
+## login
+
+meno: admin@admin.admin
+heslo: 12345678
+
 
 ## License
 
